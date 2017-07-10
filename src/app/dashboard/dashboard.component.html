@@ -1,9 +1,17 @@
-<h3>Top Heroes</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
-    <div class="module hero">
-      <h4 class="module">{{hero.name}}</h4>
-    </div>
-  </a>
+<div class="dashboard">
+  <img src="../../assets/heroes.jpg">
+
+  <hero-search></hero-search>
+
+  <h3>Top Heroes</h3>
+  <div class="grid grid-pad">
+    <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
+      <div class="module hero">
+        <h4 class="module">{{hero.name}}</h4>
+      </div>
+    </a>
+  </div>
+
+
+
 </div>
-<hero-search></hero-search>
