@@ -15,6 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api/in-memory-web-api.module';
 import {InMemoryDataService} from './in-memory-data.service';
 
+import { StarRatingModule } from 'angular-star-rating';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import {InMemoryDataService} from './in-memory-data.service';
     FormsModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
-    AppRoutingModule
+    AppRoutingModule,
+    StarRatingModule.forRoot()
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]

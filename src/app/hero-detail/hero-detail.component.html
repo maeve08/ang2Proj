@@ -1,10 +1,14 @@
 <div *ngIf="hero" class="details-container">
   <div class="detail-panel">
     <h2>{{hero.name}} details!</h2>
-    <div><label>ID: </label>{{hero.id}}</div>
+    <div><label>ID: </label><span>{{hero.id}}</span></div>
     <div>
       <label>Name: </label>
       <input [(ngModel)]="hero.name" placeholder="name"/>
+    </div>
+    <div>
+      <label>Rate it:</label>
+      <star-rating-comp [starType]="'svg'" [rating]="2.63"></star-rating-comp>
     </div>
 
     <button (click)="save()">Save</button>
