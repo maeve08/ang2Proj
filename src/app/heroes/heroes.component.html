@@ -1,5 +1,5 @@
 <div class="heroes-container">
-  <div>
+  <div class="panel-left">
     <h2>My Heroes</h2>
     <ul class="heroes">
       <li *ngFor="let hero of heroes"
@@ -12,19 +12,25 @@
     </ul>
   </div>
 
-  <div *ngIf="selectedHero">
-    <h2>
-      {{selectedHero.name | uppercase}} is my hero
-    </h2>
-    <button (click)="gotoDetail()">View Details</button>
+  <div class="panel-right">
+    <div class="add-container">
+      <label>Hero name:</label> <input #heroName>
+      <button (click)="add(heroName.value); heroName.value=''">
+        Add
+      </button>
+    </div>
+
+    <div *ngIf="selectedHero" class="selectedHero-container">
+      <h2>
+        {{selectedHero.name | uppercase}} is my hero
+      </h2>
+      <button (click)="gotoDetail()">View Details</button>
+    </div>
   </div>
 
 
-  <div>
-    <label>Hero name:</label> <input #heroName>
-    <button (click)="add(heroName.value); heroName.value=''">
-      Add
-    </button>
-  </div>
+
+
+
 
 </div>
