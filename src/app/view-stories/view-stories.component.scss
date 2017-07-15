@@ -1,26 +1,80 @@
-.dashboard {
-  background-image: url("../../assets/main-banner.jpg");
+.view-stories {
+  //background-image: url("../../assets/main-banner.jpg");
   //background-color: #cccccc;
   background-repeat: no-repeat ;
-  height: 600px;
+  height: 300px;
 
   .content {
-    padding: 250px;
+    //padding: 250px;
+    height: 700px;
+
+    .categories {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background-color: #eee;
+        color: grey;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        //margin-top: 10px;
+        width: 200px;
+        margin-left: 10px;
+        ////margin-top: 20px;
+        //margin-left: 10px;
+        //font-family: Arial;
+        //background-color: #eee;
+        //border: none;
+        //padding: 5px 10px;
+        //border-radius: 4px;
+        //cursor: pointer; cursor: hand;
+        //height: 30px;
+        //width: 100px;
+      }
+    }
 
     .content-panel {
-      height: 250px;
-      background-color: #cccccc;
+      //height: 380px;
+      background-color: #ffffff;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .content-choices {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
         width: 50%;
+
+        .recommendation-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .recommendation {
+            height: 80px;
+            border-bottom: 1px solid #D2D6DF;
+          }
+        }
       }
+    }
+
+    .view-all {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
     }
   }
 

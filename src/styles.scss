@@ -1,12 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 h1 {
   color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+  font-family: Raleway;
+  //font-variant: normal;
+  font-size: 36px;
+  font-weight: bolder;
+  //letter-spacing: 250pt;
 }
 h2, h3 {
   color: #444;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 body {
@@ -14,9 +17,14 @@ body {
 }
 body, input[text], button {
   color: #888;
-  font-family: Cambria, Georgia;
+  font-family: Raleway, Cambria, Georgia;
 }
 /* everywhere else */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+span {
+  line-height: 22px;
+  font-size: 15px;
 }
