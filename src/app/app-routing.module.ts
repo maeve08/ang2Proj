@@ -7,6 +7,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ViewStoriesComponent } from './view-stories/view-stories.component';
 import { StoryComponent } from './story/story.component';
 import { ShareStoryComponent } from './share-story/share-story.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'heroes', component: HeroesComponent},
   {path: 'view-stories', component: ViewStoriesComponent},
   {path: 'story', component: StoryComponent},
-  {path: 'share-story', component: ShareStoryComponent}
+  {path: 'share-story', component: ShareStoryComponent},
+  {path: 'footer', component: FooterComponent}
 
 ];
 

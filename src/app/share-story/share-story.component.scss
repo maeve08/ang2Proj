@@ -2,10 +2,16 @@
   //background-image: url("../../assets/main-banner.jpg");
   //background-color: #cccccc;
   background-repeat: no-repeat ;
-  height: 300px;
+  height: 900px;
+
+  h2 {
+    color: #363332;
+    font-size: 18px;
+  }
 
   label {
     font-size: 18px;
+    color: #363332;
   }
 
   .content {
@@ -22,7 +28,7 @@
       display: flex;
 
       .submit {
-        background-color: #4CAF50;
+        background-color: #ff5035;
         color: white;
         padding: 16px;
         font-size: 16px;
@@ -32,6 +38,15 @@
         width: 30%;
         height: 50px;
       }
+
+      button:hover {
+        color: #ffffff;
+        background-color: hsla(8, 100%, 60%, 0.75);
+      }
+    }
+
+    .button-container {
+      margin-top: 20px;
     }
     .content-panel {
       //height: 380px;
@@ -39,22 +54,28 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      margin-top: 20px;
       //height: 100%;
 
       .media-group {
-        background-color: #cccccc;
         display: flex;
-        flex-direction: row;
-        height: 200px;
-        width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+
+        .video, .audio {
+          border-right: 1px solid #D2D6DF;
+        }
+        //margin-top: 30px;
 
         div {
-          width: 33.33%;
+          height: 240px;
+          width: 300px;
           align-self: center;
           border-right: 1px solid #D2D6DF;
-          height: 100%;
+
+          img {
+            height: 240px;
+          }
         }
       }
 
@@ -81,7 +102,7 @@
 
   }
 
-  img {
+  .banner {
     max-width: 960px;
     width: 100%;
     height: 350px;

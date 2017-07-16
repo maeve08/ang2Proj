@@ -1,25 +1,39 @@
 <header-content></header-content>
 <div class="view-stories">
-  <img src="../../assets/main-banner.jpg">
+  <img src="../../assets/story-banner.jpg">
 
   <div class="content">
     <div class="categories">
-      <button (click)="gotoDetail()">Mental Health</button>
-      <button (click)="gotoDetail()">Physical Health</button>
-      <button (click)="gotoDetail()">Carer</button>
+      <a class="mental" href="#"><img src="../../assets/ct_mental_button.png"></a>
+      <a href="#"><img src="../../assets/ct_phys_button.png"></a>
+      <a href="#"><img src="../../assets/ct_carer_button.png"></a>
     </div>
     <div class="content-horizontal">
       <div class="content-panel">
         <div class="content-choices">
-          <img src="../../assets/crystal-maiden.jpg">
+          <img src="../../assets/ct_dana_button.png">
           <!--<a  href="#">Share a Story</a>-->
         </div>
         <div class="content-choices">
           <div class="recommendation-container">
-            <div class="recommendation">1</div>
-            <div class="recommendation">2</div>
-            <div class="recommendation">3</div>
-            <div class="recommendation">4</div>
+            <div class="recommendation">
+              <div class="text-panel">
+                <a href="/story">Psychoeducation has been a major game changer for me.</a>
+              </div>
+            </div>
+            <div class="recommendation">
+              <div class="text-panel">
+                <a href="/story">Control doesn't mean you're living a boring life.</a>
+              </div>
+            </div>
+            <div class="recommendation">
+              <div class="text-panel">
+                <a href="/story">I'm 28 years old and have bipolar disorder.</a>
+              </div>
+            </div>
+            <div class="recommendation bottom">
+              <a href="/story">View  more >></a>
+            </div>
           </div>
 
         </div>
@@ -32,3 +46,4 @@
 
   </div>
 </div>
+<footer></footer>

@@ -1,25 +1,81 @@
 .dashboard {
-  background-image: url("../../assets/main-banner.jpg");
+  //background-image: url("../../assets/home-banner.jpg");
   //background-color: #cccccc;
-  background-repeat: no-repeat ;
-  height: 600px;
+  //background-repeat: no-repeat ;
+  height:  680px;
 
   .content {
-    padding: 250px;
-
+    display: flex;
+    justify-content: center;
     .content-panel {
-      height: 250px;
-      background-color: #cccccc;
-      width: 100%;
+      margin-top: 20px;
+      height: 110px;
+      //background-color: #cccccc;
+      width: 610px;;
       display: flex;
-      align-items: center;
+      //align-items: center;
       justify-content: space-between;
+      //align-content: center;
+
       .content-choices {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 50%;
+        width: 300px;
+
+        //padding-right: 10px;
+      }
+
+      .share {
+        //background-color: #ff5035;
+      }
+
+      .want {
+        //background-color: #502f7e;
+      }
+
+      .share > a {
+        background-color: #ff5035;
+        color: #f1f1f1;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        line-height: 95px;
+      }
+
+      .want > a {
+        background-color: #502f7e;
+        color: #f1f1f1;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        line-height: 95px;
+      }
+
+      .share > a:hover {
+        color: #ffffff;
+        background-color: hsla(8, 100%, 60%, 0.75);
+      }
+
+      .want > a:hover {
+        color: #ffffff;
+        background-color: hsla(265, 46%, 34%, 0.87);
+      }
+    }
+
+    .underlay-text {
+      color: #b1b1b1;
+      margin-top: 20px;
+      font-size: 12px;
+      text-decoration: underline;
+
+      a {
+        color: #b1b1b1;
+      }
+
+      a:hover {
+        color: #363332;
       }
     }
   }
@@ -27,7 +83,7 @@
   img {
     max-width: 960px;
     width: 100%;
-    height: 350px;
+    //height: 350px;
   }
 }
 
